@@ -1,17 +1,17 @@
-import datetime
 from dateutil import relativedelta
-import requests
-import os
 from xml.dom import minidom
-import time
+import datetime
+import requests
 import hashlib
+import time
+import os
 
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = 'mod-hamza'# 'Andrew6rant'
+USER_NAME = 'mod-hamza'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -316,10 +316,6 @@ def stars_counter(data):
     return total_stars
 
 
-from xml.dom import minidom
-
-from xml.dom import minidom
-
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
     """
     Parse SVG files and update elements with age, commits, stars, repositories, and lines of code.
@@ -366,8 +362,6 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
         f.write(svg.toxml('utf-8').decode('utf-8'))
 
 
-
-
 def commit_counter(comment_size):
     """
     Counts up my total commits, using the cache file created by cache_builder.
@@ -408,6 +402,7 @@ def user_getter(username):
     variables = {'login': username}
     request = simple_request(user_getter.__name__, query, variables)
     return {'id': request.json()['data']['user']['id']}, request.json()['data']['user']['createdAt']
+
 
 def follower_getter(username):
     """
@@ -477,7 +472,6 @@ if __name__ == '__main__':
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
 
-    # several repositories that I've contributed to have since been deleted.
     if OWNER_ID == {'id': '186332886'}:
         archived_data = add_archive()
         for index in range(len(total_loc)-1):
