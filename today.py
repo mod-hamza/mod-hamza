@@ -330,22 +330,19 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
         follower_data (str): The number of followers.
         loc_data (list): List containing lines of code (added, removed, total).
     """
-    # Load the SVG file
     svg = minidom.parse(filename)
 
-    # Define indices for tspan elements to update
     tspan_indices = {
-        'repo': 8,  # Repos line
-        'contrib': 9,  # Contributed line
-        'commit': 10,  # Commits line
-        'star': 11,  # Stars line
-        'follower': 12,  # Followers line
-        'loc_total': 13,  # Total LOC line
-        'loc_add': 14,  # Added LOC line
-        'loc_del': 15   # Deleted LOC line
+        'repo': 8,
+        'contrib': 9,
+        'commit': 10,
+        'star': 11,
+        'follower': 12,
+        'loc_total': 13,
+        'loc_add': 14,
+        'loc_del': 15
     }
 
-    # Update the SVG elements with provided data
     tspan_elements = svg.getElementsByTagName('tspan')
 
     tspan_elements[tspan_indices['repo']].firstChild.data = repo_data + ' '
