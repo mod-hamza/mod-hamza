@@ -1,3 +1,9 @@
+
+# Modified version by @mod-hamza
+# Original version by @Andrew6rant
+# Date: 29-11-2024
+
+
 from dateutil import relativedelta
 from xml.dom import minidom
 import datetime
@@ -10,7 +16,8 @@ import os
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
-HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
+ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
+HEADERS = {'authorization': 'token '+ ACCESS_TOKEN}
 USER_NAME = 'mod-hamza'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
@@ -333,18 +340,20 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     svg = minidom.parse(filename)
 
     tspan_indices = {
-        'repo': 8,
-        'contrib': 9,
-        'commit': 10,
-        'star': 11,
-        'follower': 12,
-        'loc_total': 13,
-        'loc_add': 14,
-        'loc_del': 15
+        'age': 5,
+        'repo': 37,
+        'contrib': 39,
+        'commit': 41,
+        'star': 43,
+        'follower': 45,
+        'loc_total': 47,
+        'loc_add': 48,
+        'loc_del': 49
     }
 
     tspan_elements = svg.getElementsByTagName('tspan')
 
+    tspan_elements[tspan_indices['age']].firstChild.data = age_data
     tspan_elements[tspan_indices['repo']].firstChild.data = repo_data + ' '
     tspan_elements[tspan_indices['contrib']].firstChild.data = contrib_data + ' '
     tspan_elements[tspan_indices['commit']].firstChild.data = commit_data + '      '
@@ -479,6 +488,12 @@ if __name__ == '__main__':
     repo_data = formatter('my repositories', repo_time, repo_data, 2)
     contrib_data = formatter('contributed repos', contrib_time, contrib_data, 2)
     follower_data = formatter('follower counter', follower_time, follower_data, 4)
+
+    print("Commit Data:", commit_data, sep='')
+    print("Star Data:", star_data, sep='')
+    print("Repository Data:", repo_data, sep='')
+    print("Contribution Data:", contrib_data, sep='')
+    print("Follower Data:", follower_data, sep='')
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
