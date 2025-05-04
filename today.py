@@ -354,11 +354,11 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     tspan_elements = svg.getElementsByTagName('tspan')
 
     tspan_elements[tspan_indices['age']].firstChild.data = age_data
-    tspan_elements[tspan_indices['repo']].firstChild.data = repo_data + ' '
-    tspan_elements[tspan_indices['contrib']].firstChild.data = contrib_data + ' '
-    tspan_elements[tspan_indices['commit']].firstChild.data = commit_data + '      '
+    tspan_elements[tspan_indices['repo']].firstChild.data = repo_data
+    tspan_elements[tspan_indices['contrib']].firstChild.data = contrib_data
+    tspan_elements[tspan_indices['commit']].firstChild.data = commit_data + ' '
     tspan_elements[tspan_indices['star']].firstChild.data = star_data
-    tspan_elements[tspan_indices['follower']].firstChild.data = follower_data + '   '
+    tspan_elements[tspan_indices['follower']].firstChild.data = follower_data + ' '
     tspan_elements[tspan_indices['loc_total']].firstChild.data = loc_data[2]
     tspan_elements[tspan_indices['loc_add']].firstChild.data = loc_data[0] + '++'
     tspan_elements[tspan_indices['loc_del']].firstChild.data = loc_data[1] + '--'
@@ -483,11 +483,11 @@ if __name__ == '__main__':
         contrib_data += archived_data[-1]
         commit_data += int(archived_data[-2])
 
-    commit_data = formatter('commit counter', commit_time, commit_data, 7)
+    commit_data = formatter('commit counter', commit_time, commit_data, 1)
     star_data = formatter('star counter', star_time, star_data)
-    repo_data = formatter('my repositories', repo_time, repo_data, 2)
-    contrib_data = formatter('contributed repos', contrib_time, contrib_data, 2)
-    follower_data = formatter('follower counter', follower_time, follower_data, 4)
+    repo_data = formatter('my repositories', repo_time, repo_data, 1)
+    contrib_data = formatter('contributed repos', contrib_time, contrib_data, 1)
+    follower_data = formatter('follower counter', follower_time, follower_data, 1)
 
     print("Commit Data:", commit_data, sep='')
     print("Star Data:", star_data, sep='')

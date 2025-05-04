@@ -39,12 +39,12 @@ text, tspan {white-space: pre;}
 </text> -->
 
 <text x="30" y="30" fill="#24292f">
-<tspan x="30" y="30">mod-hamza</tspan>
+<tspan x="30" y="30">mod-hamza | lueurai.com</tspan>
 <tspan x="30" y="50">——————</tspan>
 <tspan x="30" y="70" class="keyColor">OS</tspan>: <tspan class="valueColor">Windows 10</tspan>
-<tspan x="30" y="90" class="keyColor">Uptime</tspan>: <tspan class="valueColor">17 years, 6 months, 21 days</tspan>
-<tspan x="30" y="110" class="keyColor">Host</tspan>: <tspan class="valueColor">Credence High School, Dubai</tspan><tspan class="commentColor"> #CHS</tspan>
-<tspan x="30" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">PCM, Compuer Science</tspan><tspan class="commentColor"> #CS</tspan>
+<tspan x="30" y="90" class="keyColor">Uptime</tspan>: <tspan class="valueColor">17 years, 11 months, 26 days</tspan>
+<tspan x="30" y="110" class="keyColor">Host</tspan>: <tspan class="valueColor">Rochester Institute of Technology, Dubai</tspan><tspan class="commentColor"> #RIT</tspan>
+<tspan x="30" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">Computing and Information Technologies</tspan><tspan class="commentColor"> #CIT</tspan>
 <tspan x="30" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">IntelliJ PyCharm, VSCode, Windsurf</tspan>
 <tspan x="30" y="190" class="keyColor">Languages</tspan>.<tspan class="keyColor">Programming</tspan>: <tspan class="valueColor">Python</tspan>
 <tspan x="30" y="210" class="keyColor">Languages</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">English, Hindi, Urdu</tspan>
@@ -57,8 +57,8 @@ text, tspan {white-space: pre;}
 <tspan x="30" y="370" class="keyColor">Discord</tspan>: <tspan class="valueColor">_ha.mz4_</tspan>
 <tspan x="30" y="410" class="keyColor">GitHub Stats</tspan>:
 <tspan x="30" y="430">——————</tspan>
-<tspan x="30" y="450" class="keyColor">Repos</tspan>: <tspan class="valueColor">4  </tspan> {<tspan class="keyColor">Contributed</tspan>: <tspan class="valueColor">5  </tspan>}  | <tspan class="keyColor">Commmits</tspan>: <tspan class="valueColor">56           </tspan>| <tspan class="keyColor">Stars</tspan>: <tspan class="valueColor">0</tspan>
-<tspan x="30" y="470" class="keyColor">Followers</tspan>: <tspan class="valueColor">1      </tspan>| <tspan class="keyColor">Lines of Code</tspan>: <tspan class="valueColor">3,704</tspan> (<tspan class="addColor">4,350++</tspan>, <tspan class="delColor">646--</tspan>)
+<tspan x="30" y="450" class="keyColor">Repos</tspan>: <tspan class="valueColor">4</tspan> {<tspan class="keyColor">Contributed</tspan>: <tspan class="valueColor">5</tspan>}  | <tspan class="keyColor">Commmits</tspan>: <tspan class="valueColor">44 </tspan>| <tspan class="keyColor">Stars</tspan>: <tspan class="valueColor">0</tspan>
+<tspan x="30" y="470" class="keyColor">Followers</tspan>: <tspan class="valueColor">1 </tspan>| <tspan class="keyColor">Lines of Code</tspan>: <tspan class="valueColor">3,761</tspan> (<tspan class="addColor">4,410++</tspan>, <tspan class="delColor">649--</tspan>)
 </text>
 
 </svg>
