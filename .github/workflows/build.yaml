@@ -21,7 +21,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.8' # your current code uses 3.8
+          python-version: '3.13' 
 
       - name: Configure pip cache
         uses: actions/cache@v4
