@@ -45,10 +45,10 @@ text, tspan {white-space: pre;}
 <tspan x="30" y="90" class="keyColor">Uptime</tspan>: <tspan class="valueColor">18 years, 7 months, 29 days</tspan>
 <tspan x="30" y="110" class="keyColor">Host</tspan>: <tspan class="valueColor">Rochester Institute of Technology, Dubai</tspan><tspan class="commentColor"> #RIT</tspan>
 <tspan x="30" y="130" class="keyColor">Kernel</tspan>: <tspan class="valueColor">Computing and Information Technologies</tspan><tspan class="commentColor"> #CIT</tspan>
-<tspan x="30" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">IntelliJ PyCharm, VSCode, Windsurf</tspan>
-<tspan x="30" y="190" class="keyColor">Languages</tspan>.<tspan class="keyColor">Programming</tspan>: <tspan class="valueColor">Python</tspan>
+<tspan x="30" y="150" class="keyColor">IDE</tspan>: <tspan class="valueColor">IntelliJ PyCharm, VSCode, Windsurf, Antigravity</tspan>
+<tspan x="30" y="190" class="keyColor">Languages</tspan>.<tspan class="keyColor">Programming</tspan>: <tspan class="valueColor">Python, HTML, CSS, FFMPEG, Java(learning)</tspan>
 <tspan x="30" y="210" class="keyColor">Languages</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">English, Hindi, Urdu</tspan>
-<tspan x="30" y="230" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Software</tspan>: <tspan class="valueColor">Discord Bots, Automation, AI</tspan>
+<tspan x="30" y="230" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Software</tspan>: <tspan class="valueColor">Discord Bots, Automation Bots, AI, Websites</tspan>
 <tspan x="30" y="250" class="keyColor">Hobbies</tspan>.<tspan class="keyColor">Real</tspan>: <tspan class="valueColor">Calisthenics, Fitness</tspan>
 <tspan x="30" y="290" class="keyColor">Contact</tspan>:
 <tspan x="30" y="310">——————</tspan>
